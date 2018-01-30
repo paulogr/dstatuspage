@@ -20,7 +20,7 @@ A Decentralized StatusPage with no single point of failure published to [IPFS](h
 > dstatuspage --daemon
 ```
 
-or to connect to your already running IPFS daemon
+or connect to your already running IPFS daemon
 
 ```bash
 > dstatuspage --no-ipfs [api_multiaddr]
