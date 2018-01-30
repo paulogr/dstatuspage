@@ -30,7 +30,7 @@ exports.handler = (dsp) => {
   }
 
   function updateSettings (req, res, next) {
-    return dsp.updateSettings(req.body)
+    return dsp.updateSettings(req.body, true)
   }
 
   function getStatus (req, res, next) {

@@ -38,7 +38,8 @@ And then access [http://localhost:7200](http://localhost:7200)
 
 - Markdown support
 - Company logo upload
-- RSS
+- RSS Feed
+- i18n support
 - Import data from statuspage.io
 
 ## License 

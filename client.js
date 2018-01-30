@@ -135,6 +135,7 @@ app.use(function (state, emitter) {
       await api('settings', 'PUT', form)
       state.settings = Object.assign({}, state.settings, form)
       emitter.emit(state.events.FLASH_SET, 'Successfully Updated')
+      emitter.emit(state.events.UNPUBLISHED_CHANGES, true)
       emitter.emit('render')
     }
 
@@ -341,7 +342,7 @@ app.route('/meta', function (state, emit) {
     <div class="meta">
       <h1>Meta Status</h1>
       ${state.flash}
-      <p>You are running D StatusPage version <span style="font-weight:600;">${config.Version}</span></p>
+      <p>You are running D StatusPage version <span style="font-weight:600;">v${config.Version}</span></p>
       <h2>IPFS</h2>
       <dl>
         <dt>Node status: </dt>

@@ -107,9 +107,13 @@ class DStatusPage {
     return this.db.get('settings').value()
   }
 
-  updateSettings (settings) {
+  updateSettings (settings, unpublished) {
     const current = this.db.get('settings').value()
-    return this.db.set('settings', { ...current, ...settings, ipfs: { ...current.ipfs, ...settings.ipfs } }).write()
+    const updated = this.db.set('settings', { ...current, ...settings, ipfs: { ...current.ipfs, ...settings.ipfs } }).write()
+    if (unpublished === true) {
+      this.db.set('unpublishedChanges', true).write()
+    }
+    return updated
   }
 
   async publish () {
