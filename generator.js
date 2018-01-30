@@ -103,7 +103,7 @@ function layout (title, view) {
         </div>
       </div>
       <footer>
-        Powered by <a target="_blank" href="https://www.statuspage.co/">D StatusPage</a> on <a target="_blank" href="https://ipfs.io/">IPFS</a>
+        Powered by <a target="_blank" href="https://www.dstatuspage.net/">D StatusPage</a> on <a target="_blank" href="https://ipfs.io/">IPFS</a>
       </footer>
     </body>
     </html>
