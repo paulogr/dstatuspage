@@ -4,15 +4,27 @@ A Decentralized StatusPage with no single point of failure published to [IPFS](h
 
 ## Give it a try
 
-`npx dstatuspage --daemon`
+```bash
+> npx dstatuspage --daemon
+```
 
 ## Install
 
-`npm install -g dstatuspage`
+```bash
+> npm install -g dstatuspage
+```
 
 ## How to use
 
-`dstatuspage --daemon`
+```bash
+> dstatuspage --daemon
+```
+
+or to connect to your already running IPFS daemon
+
+```bash
+> dstatuspage --no-ipfs [api_multiaddr]
+```
 
 And then access [http://localhost:7200](http://localhost:7200)
 
