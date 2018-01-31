@@ -2,6 +2,8 @@
 
 A Decentralized StatusPage with no single point of failure published to [IPFS](https://ipfs.io).
 
+[Follow the HN thread about it.](https://news.ycombinator.com/item?id=16273609)
+
 ## Give it a try
 
 ```bash

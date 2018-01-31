@@ -26,7 +26,8 @@
     "cloc": "cloc --exclude-dir=$(tr '\n' ',' < .clocignore) .",
     "clean": "rimraf ./public/client/assets/bundle.js",
     "build": "npm run clean && browserify ./client.js -g yo-yoify -o ./public/client/assets/bundle.js",
-    "build:release": "npm run clean && browserify -p tinyify ./client.js -t babelify -g yo-yoify -o ./public/client/assets/bundle.js"
+    "build:release": "npm run clean && browserify -p tinyify ./client.js -t babelify -g yo-yoify -o ./public/client/assets/bundle.js",
+    "changelog": "changelog -m"
   },
   "repository": {
     "type": "git",
@@ -62,6 +63,7 @@
     "babel-preset-env": "^1.6.1",
     "babelify": "^8.0.0",
     "browserify": "^15.2.0",
+    "changelog": "^1.4.1",
     "choo-devtools": "^2.3.3",
     "mocha": "^5.0.0",
     "npmversion": "^1.6.1",
