@@ -5,6 +5,9 @@
   "author": "Paulo Rodrigues (@paulo_gr)",
   "license": "MIT",
   "main": "index.js",
+  "engines" : { 
+    "node" : ">=8.0.0" 
+  },
   "bin": {
     "dstatuspage": "bin.js"
   },
