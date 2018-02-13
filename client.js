@@ -1,3 +1,4 @@
+require('formdata-polyfill')
 const choo = require('choo')
 const html = require('choo/html')
 const devtools = require('choo-devtools')

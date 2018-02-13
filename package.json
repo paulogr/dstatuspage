@@ -53,6 +53,7 @@
     "cuid": "^2.0.2",
     "date-fns": "^1.29.0",
     "express": "^4.16.2",
+    "formdata-polyfill": "^3.0.9",
     "go-ipfs-dep": "^0.4.13",
     "ipfsd-ctl": "^0.27.3",
     "lowdb": "^1.0.0",
